@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试velocity</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <table>
+        <thead>
+            <th>id</th>
+            <th>密码</th>
+            <th>姓名</th>
+        </thead>
+        <tbody>
+            #foreach($t in $users)
+
+            <tr>
+                <td>$t.Id</td>
+                <td>$t.Password</td>
+                <td>$t.name</td>
+            </tr>
+            #end
+        </tbody>
+    </table>
+</body>
+</html>
